@@ -35,10 +35,12 @@ Public Class FrmCargaRP
         Dim conexionDB As New ConexionDB()
         Dim conexion As OleDbConnection = conexionDB.AbrirConexion()
 
-        Dim query As String = "INSERT INTO Reparaciones (cliente, fecha_ingreso, descripcion_problema, tecnico_asignado, estado_reparacion) VALUES (?, ?, ?, ?, ?)"
+        Dim query As String = "INSERT INTO Reparaciones (cliente,DNI,contacto, fecha_ingreso, descripcion_problema, tecnico_asignado, estado_reparacion) VALUES (?, ?, ?, ?, ?,?,?)"
         Dim cmd As New OleDbCommand(query, conexion)
 
         cmd.Parameters.Add("cliente", OleDbType.VarChar).Value = input_cliente.Text
+        cmd.Parameters.Add("DNI", OleDbType.Integer).Value = Convert.ToInt32(input_dni.Text)
+        cmd.Parameters.Add("contacto", OleDbType.VarChar).Value = input_contacto.Text
         cmd.Parameters.Add("fecha_ingreso", OleDbType.Date).Value = Date.Now
         cmd.Parameters.Add("descripcion_problema", OleDbType.VarChar).Value = input_descripcion.Text
         cmd.Parameters.Add("tecnico_asignado", OleDbType.VarChar).Value = ListBoxUsuarios.SelectedItem

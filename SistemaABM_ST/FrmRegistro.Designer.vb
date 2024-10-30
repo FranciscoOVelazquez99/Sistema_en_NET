@@ -38,7 +38,7 @@ Partial Class FrmRegistro
         'lbl_nombre_usuario
         '
         Me.lbl_nombre_usuario.AutoSize = True
-        Me.lbl_nombre_usuario.Location = New System.Drawing.Point(8, 65)
+        Me.lbl_nombre_usuario.Location = New System.Drawing.Point(9, 39)
         Me.lbl_nombre_usuario.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_nombre_usuario.Name = "lbl_nombre_usuario"
         Me.lbl_nombre_usuario.Size = New System.Drawing.Size(96, 13)
@@ -47,7 +47,7 @@ Partial Class FrmRegistro
         '
         'input_nombre
         '
-        Me.input_nombre.Location = New System.Drawing.Point(10, 80)
+        Me.input_nombre.Location = New System.Drawing.Point(11, 54)
         Me.input_nombre.Margin = New System.Windows.Forms.Padding(2)
         Me.input_nombre.Name = "input_nombre"
         Me.input_nombre.Size = New System.Drawing.Size(94, 20)
@@ -55,7 +55,7 @@ Partial Class FrmRegistro
         '
         'input_contraseña
         '
-        Me.input_contraseña.Location = New System.Drawing.Point(10, 155)
+        Me.input_contraseña.Location = New System.Drawing.Point(11, 110)
         Me.input_contraseña.Margin = New System.Windows.Forms.Padding(2)
         Me.input_contraseña.Name = "input_contraseña"
         Me.input_contraseña.Size = New System.Drawing.Size(127, 20)
@@ -64,7 +64,7 @@ Partial Class FrmRegistro
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(8, 131)
+        Me.Label1.Location = New System.Drawing.Point(9, 95)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(61, 13)
@@ -74,7 +74,7 @@ Partial Class FrmRegistro
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(179, 65)
+        Me.Label2.Location = New System.Drawing.Point(180, 39)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(23, 13)
@@ -84,7 +84,7 @@ Partial Class FrmRegistro
         'btn_registrar
         '
         Me.btn_registrar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_registrar.Location = New System.Drawing.Point(11, 223)
+        Me.btn_registrar.Location = New System.Drawing.Point(11, 161)
         Me.btn_registrar.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_registrar.Name = "btn_registrar"
         Me.btn_registrar.Size = New System.Drawing.Size(72, 34)
@@ -113,16 +113,16 @@ Partial Class FrmRegistro
         'list_rol
         '
         Me.list_rol.FormattingEnabled = True
-        Me.list_rol.Location = New System.Drawing.Point(182, 80)
+        Me.list_rol.Location = New System.Drawing.Point(183, 54)
         Me.list_rol.Name = "list_rol"
-        Me.list_rol.Size = New System.Drawing.Size(120, 95)
+        Me.list_rol.Size = New System.Drawing.Size(120, 82)
         Me.list_rol.TabIndex = 8
         '
         'FrmRegistro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(344, 268)
+        Me.ClientSize = New System.Drawing.Size(344, 213)
         Me.Controls.Add(Me.list_rol)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.btn_registrar)

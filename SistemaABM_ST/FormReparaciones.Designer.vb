@@ -27,31 +27,32 @@ Partial Class FormReparaciones
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.btn_atras = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.btn_update = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.btn_añadir = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.btn_reload = New System.Windows.Forms.ToolStripButton()
         CType(Me.DataGridViewReparaciones, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'DataGridViewReparaciones
         '
-        Me.DataGridViewReparaciones.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.DataGridViewReparaciones.AllowUserToAddRows = False
+        Me.DataGridViewReparaciones.AllowUserToDeleteRows = False
+        Me.DataGridViewReparaciones.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridViewReparaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.DataGridViewReparaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridViewReparaciones.Location = New System.Drawing.Point(0, 28)
         Me.DataGridViewReparaciones.Name = "DataGridViewReparaciones"
-        Me.DataGridViewReparaciones.Size = New System.Drawing.Size(773, 403)
+        Me.DataGridViewReparaciones.Size = New System.Drawing.Size(1000, 403)
         Me.DataGridViewReparaciones.TabIndex = 3
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btn_atras, Me.ToolStripSeparator2, Me.btn_update, Me.ToolStripSeparator1, Me.btn_añadir})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btn_atras, Me.ToolStripSeparator2, Me.btn_añadir, Me.ToolStripSeparator3, Me.btn_reload})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(773, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1000, 25)
         Me.ToolStrip1.TabIndex = 4
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -69,20 +70,6 @@ Partial Class FormReparaciones
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
         Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 25)
         '
-        'btn_update
-        '
-        Me.btn_update.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.btn_update.Image = CType(resources.GetObject("btn_update.Image"), System.Drawing.Image)
-        Me.btn_update.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btn_update.Name = "btn_update"
-        Me.btn_update.Size = New System.Drawing.Size(63, 22)
-        Me.btn_update.Text = "Actualizar"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
-        '
         'btn_añadir
         '
         Me.btn_añadir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
@@ -92,11 +79,25 @@ Partial Class FormReparaciones
         Me.btn_añadir.Size = New System.Drawing.Size(46, 22)
         Me.btn_añadir.Text = "Nuevo"
         '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 25)
+        '
+        'btn_reload
+        '
+        Me.btn_reload.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.btn_reload.Image = CType(resources.GetObject("btn_reload.Image"), System.Drawing.Image)
+        Me.btn_reload.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btn_reload.Name = "btn_reload"
+        Me.btn_reload.Size = New System.Drawing.Size(63, 22)
+        Me.btn_reload.Text = "Actualizar"
+        '
         'FormReparaciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(773, 431)
+        Me.ClientSize = New System.Drawing.Size(1000, 431)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.DataGridViewReparaciones)
         Me.Name = "FormReparaciones"
@@ -110,9 +111,9 @@ Partial Class FormReparaciones
     End Sub
     Friend WithEvents DataGridViewReparaciones As System.Windows.Forms.DataGridView
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
-    Friend WithEvents btn_update As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents btn_añadir As System.Windows.Forms.ToolStripButton
     Friend WithEvents btn_atras As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripSeparator2 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ToolStripSeparator3 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents btn_reload As System.Windows.Forms.ToolStripButton
 End Class

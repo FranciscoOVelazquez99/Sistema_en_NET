@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmCargaRP
+Partial Class FormDetalleReparacion
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -27,7 +27,7 @@ Partial Class FrmCargaRP
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.input_cliente = New System.Windows.Forms.TextBox()
-        Me.btn_subir = New System.Windows.Forms.Button()
+        Me.btn_editar = New System.Windows.Forms.Button()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.input_descripcion = New System.Windows.Forms.RichTextBox()
@@ -39,6 +39,11 @@ Partial Class FrmCargaRP
         Me.input_contacto = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.combox_estado = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.datePickerFechaSalida = New System.Windows.Forms.DateTimePicker()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.chkCambiarFechaSalida = New System.Windows.Forms.CheckBox()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -81,15 +86,15 @@ Partial Class FrmCargaRP
         Me.input_cliente.Size = New System.Drawing.Size(128, 20)
         Me.input_cliente.TabIndex = 4
         '
-        'btn_subir
+        'btn_editar
         '
-        Me.btn_subir.Location = New System.Drawing.Point(12, 292)
-        Me.btn_subir.Margin = New System.Windows.Forms.Padding(2)
-        Me.btn_subir.Name = "btn_subir"
-        Me.btn_subir.Size = New System.Drawing.Size(89, 29)
-        Me.btn_subir.TabIndex = 7
-        Me.btn_subir.Text = "Subir"
-        Me.btn_subir.UseVisualStyleBackColor = True
+        Me.btn_editar.Location = New System.Drawing.Point(12, 292)
+        Me.btn_editar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_editar.Name = "btn_editar"
+        Me.btn_editar.Size = New System.Drawing.Size(89, 29)
+        Me.btn_editar.TabIndex = 7
+        Me.btn_editar.Text = "Editar"
+        Me.btn_editar.UseVisualStyleBackColor = True
         '
         'ContextMenuStrip1
         '
@@ -141,7 +146,6 @@ Partial Class FrmCargaRP
         '
         'input_dni
         '
-        Me.input_dni.AcceptsReturn = True
         Me.input_dni.Location = New System.Drawing.Point(21, 80)
         Me.input_dni.Margin = New System.Windows.Forms.Padding(2)
         Me.input_dni.Name = "input_dni"
@@ -192,21 +196,70 @@ Partial Class FrmCargaRP
         Me.Label6.TabIndex = 16
         Me.Label6.Text = "Datos del cliente"
         '
-        'FrmCargaRP
+        'combox_estado
+        '
+        Me.combox_estado.FormattingEnabled = True
+        Me.combox_estado.Location = New System.Drawing.Point(205, 292)
+        Me.combox_estado.Name = "combox_estado"
+        Me.combox_estado.Size = New System.Drawing.Size(121, 21)
+        Me.combox_estado.TabIndex = 17
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(202, 277)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(43, 13)
+        Me.Label7.TabIndex = 18
+        Me.Label7.Text = "Estado:"
+        '
+        'datePickerFechaSalida
+        '
+        Me.datePickerFechaSalida.Location = New System.Drawing.Point(376, 293)
+        Me.datePickerFechaSalida.Name = "datePickerFechaSalida"
+        Me.datePickerFechaSalida.Size = New System.Drawing.Size(200, 20)
+        Me.datePickerFechaSalida.TabIndex = 19
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(373, 277)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(82, 13)
+        Me.Label8.TabIndex = 20
+        Me.Label8.Text = "Fecha de salida"
+        '
+        'chkCambiarFechaSalida
+        '
+        Me.chkCambiarFechaSalida.AutoSize = True
+        Me.chkCambiarFechaSalida.Location = New System.Drawing.Point(355, 295)
+        Me.chkCambiarFechaSalida.Name = "chkCambiarFechaSalida"
+        Me.chkCambiarFechaSalida.Size = New System.Drawing.Size(15, 14)
+        Me.chkCambiarFechaSalida.TabIndex = 21
+        Me.chkCambiarFechaSalida.UseVisualStyleBackColor = True
+        '
+        'FormDetalleReparacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(586, 332)
+        Me.ClientSize = New System.Drawing.Size(595, 332)
+        Me.Controls.Add(Me.chkCambiarFechaSalida)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.datePickerFechaSalida)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.combox_estado)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.ListBoxUsuarios)
         Me.Controls.Add(Me.input_descripcion)
-        Me.Controls.Add(Me.btn_subir)
+        Me.Controls.Add(Me.btn_editar)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.Name = "FrmCargaRP"
+        Me.Name = "FormDetalleReparacion"
         Me.Text = "Nueva Reparación"
         Me.ContextMenuStrip1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
@@ -219,7 +272,7 @@ Partial Class FrmCargaRP
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents input_cliente As System.Windows.Forms.TextBox
-    Friend WithEvents btn_subir As System.Windows.Forms.Button
+    Friend WithEvents btn_editar As System.Windows.Forms.Button
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents ToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents input_descripcion As System.Windows.Forms.RichTextBox
@@ -231,4 +284,9 @@ Partial Class FrmCargaRP
     Friend WithEvents input_contacto As System.Windows.Forms.TextBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents combox_estado As System.Windows.Forms.ComboBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents datePickerFechaSalida As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents chkCambiarFechaSalida As System.Windows.Forms.CheckBox
 End Class
